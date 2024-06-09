@@ -23,5 +23,11 @@ namespace bdproject
         {
 
         }
+
+        private void Support_Click(object sender, EventArgs e)
+        {
+            SupportForm sp = new SupportForm();
+            sp.ShowDialog();
+        }
     }
 }

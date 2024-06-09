@@ -42,13 +42,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this._airport_23_106_kretinin_mamaevDataSet = new bdproject._airport_23_106_kretinin_mamaevDataSet();
             this.airport23106kretininmamaevDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._airport_23_106_kretinin_mamaevDataSet = new bdproject._airport_23_106_kretinin_mamaevDataSet();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Profile = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -57,11 +57,13 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.Support = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._airport_23_106_kretinin_mamaevDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.airport23106kretininmamaevDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._airport_23_106_kretinin_mamaevDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -194,15 +196,15 @@
             this.dataGridView1.Size = new System.Drawing.Size(323, 115);
             this.dataGridView1.TabIndex = 22;
             // 
-            // _airport_23_106_kretinin_mamaevDataSet
-            // 
-            this._airport_23_106_kretinin_mamaevDataSet.DataSetName = "_airport_23_106_kretinin_mamaevDataSet";
-            this._airport_23_106_kretinin_mamaevDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // airport23106kretininmamaevDataSetBindingSource
             // 
             this.airport23106kretininmamaevDataSetBindingSource.DataSource = this._airport_23_106_kretinin_mamaevDataSet;
             this.airport23106kretininmamaevDataSetBindingSource.Position = 0;
+            // 
+            // _airport_23_106_kretinin_mamaevDataSet
+            // 
+            this._airport_23_106_kretinin_mamaevDataSet.DataSetName = "_airport_23_106_kretinin_mamaevDataSet";
+            this._airport_23_106_kretinin_mamaevDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox1
             // 
@@ -240,14 +242,16 @@
             this.label10.TabIndex = 26;
             this.label10.Text = "Куда";
             // 
-            // button2
+            // Profile
             // 
-            this.button2.Location = new System.Drawing.Point(441, 79);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Profile.BackColor = System.Drawing.Color.DimGray;
+            this.Profile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Profile.Location = new System.Drawing.Point(430, 55);
+            this.Profile.Name = "Profile";
+            this.Profile.Size = new System.Drawing.Size(125, 47);
+            this.Profile.TabIndex = 27;
+            this.Profile.Text = "Профиль";
+            this.Profile.UseVisualStyleBackColor = false;
             // 
             // label11
             // 
@@ -333,12 +337,37 @@
             this.label14.TabIndex = 35;
             this.label14.Text = "Дата прилёта";
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.DimGray;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Location = new System.Drawing.Point(430, 118);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(125, 47);
+            this.button3.TabIndex = 36;
+            this.button3.Text = "Путеводитель";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // Support
+            // 
+            this.Support.BackColor = System.Drawing.Color.DimGray;
+            this.Support.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Support.Location = new System.Drawing.Point(430, 181);
+            this.Support.Name = "Support";
+            this.Support.Size = new System.Drawing.Size(125, 47);
+            this.Support.TabIndex = 37;
+            this.Support.Text = "Поддержка";
+            this.Support.UseVisualStyleBackColor = false;
+            this.Support.Click += new System.EventHandler(this.Support_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 617);
+            this.Controls.Add(this.Support);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.dateTimePicker2);
@@ -347,7 +376,7 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Profile);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
@@ -369,8 +398,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._airport_23_106_kretinin_mamaevDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.airport23106kretininmamaevDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._airport_23_106_kretinin_mamaevDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,7 +425,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Profile;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label12;
@@ -405,5 +434,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Support;
     }
 }
