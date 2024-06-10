@@ -45,5 +45,10 @@ namespace bdproject
         {
 
         }
+
+        private void FromBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
