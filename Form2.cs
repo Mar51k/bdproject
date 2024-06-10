@@ -20,7 +20,7 @@ namespace bdproject
         {
             InitializeComponent();
             this.BackColor = Color.FromArgb(51, 51, 51);
-            dataGridView1.BackgroundColor = Color.FromArgb(51, 51, 51);
+            //dataGridView1.BackgroundColor = Color.FromArgb(51, 51, 51);
             conn = new SqlConnection(ConfigurationManager.ConnectionStrings["bdproject.Properties.Settings.airportDB"].ConnectionString);
             conn.Open();
         }
@@ -49,6 +49,15 @@ namespace bdproject
             string ticket = TicketType.Text;
             string start = departure_date.Text;
             string end = arrival_date.Text;
+
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(
+                $"select N'Маршрут', N'[Время начала рейса]', N'[Время завершения рейса]', N'[Название рейса]' from Рейсы where (Маршрут Like N'%{From}-{Where}%') " +
+                $"and ([Время начала рейса] LIKE N'%{start}%') and ([Время завершения рейса] LIKE N'%{end}%')", conn);
+
+            DataSet ds = new DataSet();
+            dataAdapter.Fill(ds);
+            
+            dataGridView1.DataSource = ds.Tables[0];
         }
 
         private void FromBox_TextChanged(object sender, EventArgs e)
