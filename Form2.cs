@@ -22,7 +22,7 @@ namespace bdproject
             this.BackColor = Color.FromArgb(51, 51, 51);
             //dataGridView1.BackgroundColor = Color.FromArgb(51, 51, 51);
             conn = new SqlConnection(ConfigurationManager.ConnectionStrings["bdproject.Properties.Settings.airportDB"].ConnectionString);
-            conn.Open();
+           // conn.Open();
         }
 
         private void label1_Click(object sender, EventArgs e)
