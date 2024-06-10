@@ -21,7 +21,7 @@ namespace bdproject
             InitializeComponent();
             this.BackColor = Color.FromArgb(51, 51, 51);
             dataGridView1.BackgroundColor = Color.FromArgb(51, 51, 51);
-            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Data Source=DESKTOP-E9RKKNE\\SQLEXPRESS;Initial Catalog=&quot;airport 23.106 kretinin mamaev&quot;;Integrated Security=True;Encrypt=False"].ConnectionString);
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["bdproject.Properties.Settings.airportDB"].ConnectionString);
             conn.Open();
         }
 
@@ -43,7 +43,12 @@ namespace bdproject
 
         private void seacrhbutton_Click(object sender, EventArgs e)
         {
-
+            string From = FromBox.Text;
+            string Where = WhereBox.Text;
+            string count = HumanCounter.Text;
+            string ticket = TicketType.Text;
+            string start = departure_date.Text;
+            string end = arrival_date.Text;
         }
     }
 }
