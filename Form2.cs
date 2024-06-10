@@ -50,5 +50,10 @@ namespace bdproject
             string start = departure_date.Text;
             string end = arrival_date.Text;
         }
+
+        private void FromBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
