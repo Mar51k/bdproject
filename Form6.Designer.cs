@@ -43,19 +43,27 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.fAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.главнаяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.петеводительToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сотрудникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.кToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(347, 28);
+            this.label1.Location = new System.Drawing.Point(314, 74);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(688, 110);
             this.label1.TabIndex = 0;
@@ -68,7 +76,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(462, 173);
+            this.label2.Location = new System.Drawing.Point(451, 219);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(486, 58);
             this.label2.TabIndex = 1;
@@ -195,12 +203,68 @@
             this.label8.Text = "Сеченов Денис\r\n Григорьевич\r\nЗам администратора";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.DimGray;
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1253, 33);
+            this.menuStrip1.TabIndex = 35;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fAQToolStripMenuItem,
+            this.главнаяToolStripMenuItem,
+            this.петеводительToolStripMenuItem,
+            this.сотрудникиToolStripMenuItem,
+            this.кToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(78, 29);
+            this.toolStripMenuItem1.Text = "Меню";
+            // 
+            // fAQToolStripMenuItem
+            // 
+            this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
+            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(232, 34);
+            this.fAQToolStripMenuItem.Text = "F.A.Q";
+            // 
+            // главнаяToolStripMenuItem
+            // 
+            this.главнаяToolStripMenuItem.Name = "главнаяToolStripMenuItem";
+            this.главнаяToolStripMenuItem.Size = new System.Drawing.Size(232, 34);
+            this.главнаяToolStripMenuItem.Text = "Авиабилеты ";
+            // 
+            // петеводительToolStripMenuItem
+            // 
+            this.петеводительToolStripMenuItem.Name = "петеводительToolStripMenuItem";
+            this.петеводительToolStripMenuItem.Size = new System.Drawing.Size(232, 34);
+            this.петеводительToolStripMenuItem.Text = "Петеводитель ";
+            // 
+            // сотрудникиToolStripMenuItem
+            // 
+            this.сотрудникиToolStripMenuItem.Name = "сотрудникиToolStripMenuItem";
+            this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(232, 34);
+            this.сотрудникиToolStripMenuItem.Text = "Сотрудники";
+            // 
+            // кToolStripMenuItem
+            // 
+            this.кToolStripMenuItem.Name = "кToolStripMenuItem";
+            this.кToolStripMenuItem.Size = new System.Drawing.Size(232, 34);
+            this.кToolStripMenuItem.Text = "Профиль ";
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1253, 817);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -224,6 +288,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,5 +311,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem fAQToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem главнаяToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem петеводительToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem сотрудникиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem кToolStripMenuItem;
     }
 }

@@ -32,12 +32,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.fAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,6 +42,10 @@
             this.петеводительToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сотрудникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.кToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -92,9 +93,10 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Black;
-            this.groupBox1.Controls.Add(this.panel3);
-            this.groupBox1.Controls.Add(this.panel2);
-            this.groupBox1.Controls.Add(this.panel1);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -107,14 +109,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Настройки";
             // 
-            // label3
+            // label5
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(284, 40);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Региональные ";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(20, 221);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(404, 40);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Конфиденциальность";
             // 
             // label4
             // 
@@ -125,38 +127,14 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "Отображение цен";
             // 
-            // label5
+            // label3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 221);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(404, 40);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Конфиденциальность";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DimGray;
-            this.panel1.Location = new System.Drawing.Point(27, 101);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(710, 10);
-            this.panel1.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DimGray;
-            this.panel2.Location = new System.Drawing.Point(27, 179);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(710, 10);
-            this.panel2.TabIndex = 4;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.DimGray;
-            this.panel3.Location = new System.Drawing.Point(27, 264);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(710, 10);
-            this.panel3.TabIndex = 5;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(20, 58);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(284, 40);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Региональные ";
             // 
             // menuStrip1
             // 
@@ -167,7 +145,7 @@
             this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1253, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1253, 36);
             this.menuStrip1.TabIndex = 33;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -180,38 +158,77 @@
             this.сотрудникиToolStripMenuItem,
             this.кToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(78, 29);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(78, 30);
             this.toolStripMenuItem1.Text = "Меню";
             // 
             // fAQToolStripMenuItem
             // 
             this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
-            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(232, 34);
             this.fAQToolStripMenuItem.Text = "F.A.Q";
             // 
             // главнаяToolStripMenuItem
             // 
             this.главнаяToolStripMenuItem.Name = "главнаяToolStripMenuItem";
-            this.главнаяToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.главнаяToolStripMenuItem.Size = new System.Drawing.Size(232, 34);
             this.главнаяToolStripMenuItem.Text = "Авиабилеты ";
             // 
             // петеводительToolStripMenuItem
             // 
             this.петеводительToolStripMenuItem.Name = "петеводительToolStripMenuItem";
-            this.петеводительToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.петеводительToolStripMenuItem.Size = new System.Drawing.Size(232, 34);
             this.петеводительToolStripMenuItem.Text = "Петеводитель ";
             // 
             // сотрудникиToolStripMenuItem
             // 
             this.сотрудникиToolStripMenuItem.Name = "сотрудникиToolStripMenuItem";
-            this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(232, 34);
             this.сотрудникиToolStripMenuItem.Text = "Сотрудники";
             // 
             // кToolStripMenuItem
             // 
             this.кToolStripMenuItem.Name = "кToolStripMenuItem";
-            this.кToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.кToolStripMenuItem.Size = new System.Drawing.Size(232, 34);
             this.кToolStripMenuItem.Text = "Профиль ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(-839, 78);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(437, 40);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "____________________";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(21, 98);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(702, 32);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "___________________________________________";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(21, 176);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(702, 32);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "___________________________________________";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(21, 261);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(702, 32);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "___________________________________________";
             // 
             // Form3
             // 
@@ -246,9 +263,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem fAQToolStripMenuItem;
@@ -256,5 +270,9 @@
         private System.Windows.Forms.ToolStripMenuItem петеводительToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сотрудникиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem кToolStripMenuItem;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
     }
 }
