@@ -35,6 +35,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(776, 453);
