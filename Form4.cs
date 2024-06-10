@@ -15,6 +15,7 @@ namespace bdproject
         public Form4()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(51, 51, 51);
         }
     }
 }

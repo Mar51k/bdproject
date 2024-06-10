@@ -15,6 +15,7 @@ namespace bdproject
         public Form3()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(51, 51, 51);
         }
 
         private void label2_Click(object sender, EventArgs e)
