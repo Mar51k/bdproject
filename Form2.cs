@@ -35,12 +35,6 @@ namespace bdproject
             
         }
 
-        private void Support_Click(object sender, EventArgs e)
-        {
-            SupportForm sp = new SupportForm();
-            sp.ShowDialog();
-        }
-
         private void Form2_Load(object sender, EventArgs e)
         {
 
@@ -71,6 +65,32 @@ namespace bdproject
         private void FromBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void fAQToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SupportForm sp = new SupportForm();
+            sp.ShowDialog();
+        }
+
+        private void главнаяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void петеводительToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CityFinder cit  = new CityFinder();
+            cit.Show();
+            Close();
+
+        }
+
+        private void кToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProfileForm profile = new ProfileForm();
+            profile.Show();
+            Close();
         }
     }
 }

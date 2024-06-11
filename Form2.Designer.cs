@@ -41,12 +41,13 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.airport23106kretininmamaevDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._airport_23_106_kretinin_mamaevDataSet = new bdproject._airport_23_106_kretinin_mamaevDataSet();
             this.FromBox = new System.Windows.Forms.TextBox();
             this.WhereBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.Profile = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.HumanCounter = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -55,8 +56,6 @@
             this.arrival_date = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.Support = new System.Windows.Forms.Button();
             this.searchbutton = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,16 +64,12 @@
             this.петеводительToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сотрудникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.кToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.airport23106kretininmamaevDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.рейсыBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.airport23106kretininmamaevDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._airport_23_106_kretinin_mamaevDataSet)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.airport23106kretininmamaevDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.рейсыBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -196,6 +191,23 @@
             this.button1.Text = "Показать все места";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Black;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.DataSource = this.airport23106kretininmamaevDataSetBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(27, 233);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.Size = new System.Drawing.Size(323, 115);
+            this.dataGridView1.TabIndex = 22;
+            // 
+            // airport23106kretininmamaevDataSetBindingSource
+            // 
+            this.airport23106kretininmamaevDataSetBindingSource.DataSource = this._airport_23_106_kretinin_mamaevDataSet;
+            this.airport23106kretininmamaevDataSetBindingSource.Position = 0;
+            // 
             // _airport_23_106_kretinin_mamaevDataSet
             // 
             this._airport_23_106_kretinin_mamaevDataSet.DataSetName = "_airport_23_106_kretinin_mamaevDataSet";
@@ -237,17 +249,6 @@
             this.label10.Size = new System.Drawing.Size(35, 13);
             this.label10.TabIndex = 26;
             this.label10.Text = "Куда";
-            // 
-            // Profile
-            // 
-            this.Profile.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Profile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Profile.Location = new System.Drawing.Point(430, 55);
-            this.Profile.Name = "Profile";
-            this.Profile.Size = new System.Drawing.Size(125, 47);
-            this.Profile.TabIndex = 27;
-            this.Profile.Text = "Профиль";
-            this.Profile.UseVisualStyleBackColor = false;
             // 
             // label11
             // 
@@ -333,34 +334,11 @@
             this.label14.TabIndex = 35;
             this.label14.Text = "Дата прилёта";
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(430, 118);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 47);
-            this.button3.TabIndex = 36;
-            this.button3.Text = "Путеводитель";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // Support
-            // 
-            this.Support.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Support.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Support.Location = new System.Drawing.Point(430, 181);
-            this.Support.Name = "Support";
-            this.Support.Size = new System.Drawing.Size(125, 47);
-            this.Support.TabIndex = 37;
-            this.Support.Text = "Поддержка";
-            this.Support.UseVisualStyleBackColor = false;
-            this.Support.Click += new System.EventHandler(this.Support_Click);
-            // 
             // searchbutton
             // 
             this.searchbutton.BackColor = System.Drawing.Color.DodgerBlue;
             this.searchbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.searchbutton.Location = new System.Drawing.Point(430, 242);
+            this.searchbutton.Location = new System.Drawing.Point(414, 81);
             this.searchbutton.Name = "searchbutton";
             this.searchbutton.Size = new System.Drawing.Size(125, 47);
             this.searchbutton.TabIndex = 39;
@@ -396,50 +374,38 @@
             // fAQToolStripMenuItem
             // 
             this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
-            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fAQToolStripMenuItem.Text = "F.A.Q";
+            this.fAQToolStripMenuItem.Click += new System.EventHandler(this.fAQToolStripMenuItem_Click);
             // 
             // главнаяToolStripMenuItem
             // 
+            this.главнаяToolStripMenuItem.Checked = true;
+            this.главнаяToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.главнаяToolStripMenuItem.Name = "главнаяToolStripMenuItem";
-            this.главнаяToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.главнаяToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.главнаяToolStripMenuItem.Text = "Авиабилеты ";
+            this.главнаяToolStripMenuItem.Click += new System.EventHandler(this.главнаяToolStripMenuItem_Click);
             // 
             // петеводительToolStripMenuItem
             // 
             this.петеводительToolStripMenuItem.Name = "петеводительToolStripMenuItem";
-            this.петеводительToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.петеводительToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.петеводительToolStripMenuItem.Text = "Петеводитель ";
+            this.петеводительToolStripMenuItem.Click += new System.EventHandler(this.петеводительToolStripMenuItem_Click);
             // 
             // сотрудникиToolStripMenuItem
             // 
             this.сотрудникиToolStripMenuItem.Name = "сотрудникиToolStripMenuItem";
-            this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.сотрудникиToolStripMenuItem.Text = "Сотрудники";
             // 
             // кToolStripMenuItem
             // 
             this.кToolStripMenuItem.Name = "кToolStripMenuItem";
-            this.кToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.кToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.кToolStripMenuItem.Text = "Профиль ";
-            // 
-            // airport23106kretininmamaevDataSetBindingSource
-            // 
-            this.airport23106kretininmamaevDataSetBindingSource.DataSource = this._airport_23_106_kretinin_mamaevDataSet;
-            this.airport23106kretininmamaevDataSetBindingSource.Position = 0;
-            // 
-            // рейсыBindingSource
-            // 
-            this.рейсыBindingSource.DataMember = "Рейсы";
-            this.рейсыBindingSource.DataSource = this.airport23106kretininmamaevDataSetBindingSource;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(27, 222);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(323, 135);
-            this.dataGridView1.TabIndex = 41;
+            this.кToolStripMenuItem.Click += new System.EventHandler(this.кToolStripMenuItem_Click);
             // 
             // Form2
             // 
@@ -448,11 +414,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 682);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.searchbutton);
-            this.Controls.Add(this.Support);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.arrival_date);
@@ -461,11 +424,11 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.HumanCounter);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.Profile);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.WhereBox);
             this.Controls.Add(this.FromBox);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
@@ -482,12 +445,11 @@
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.airport23106kretininmamaevDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._airport_23_106_kretinin_mamaevDataSet)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.airport23106kretininmamaevDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.рейсыBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -506,12 +468,13 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource airport23106kretininmamaevDataSetBindingSource;
         private _airport_23_106_kretinin_mamaevDataSet _airport_23_106_kretinin_mamaevDataSet;
         private System.Windows.Forms.TextBox FromBox;
         private System.Windows.Forms.TextBox WhereBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button Profile;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox HumanCounter;
         private System.Windows.Forms.Label label12;
@@ -520,8 +483,6 @@
         private System.Windows.Forms.DateTimePicker arrival_date;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button Support;
         private System.Windows.Forms.Button searchbutton;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
@@ -530,8 +491,5 @@
         private System.Windows.Forms.ToolStripMenuItem петеводительToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сотрудникиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem кToolStripMenuItem;
-        private System.Windows.Forms.BindingSource airport23106kretininmamaevDataSetBindingSource;
-        private System.Windows.Forms.BindingSource рейсыBindingSource;
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

@@ -10,11 +10,31 @@ using System.Windows.Forms;
 
 namespace bdproject
 {
-    public partial class Form5 : Form
+    public partial class ProfileForm : Form
     {
-        public Form5()
+        public ProfileForm()
         {
             InitializeComponent();
+        }
+
+        private void fAQToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SupportForm supportForm = new SupportForm();
+            supportForm.ShowDialog();
+        }
+
+        private void главнаяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+            Close();
+        }
+
+        private void петеводительToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CityFinder cityFinder = new CityFinder();
+            cityFinder.Show();
+            Close();
         }
     }
 }

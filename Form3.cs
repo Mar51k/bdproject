@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace bdproject
 {
-    public partial class Form3 : Form
+    public partial class AuthForm : Form
     {
-        public Form3()
+        public AuthForm()
         {
             InitializeComponent();
             this.BackColor = Color.FromArgb(51, 51, 51);
@@ -25,7 +25,9 @@ namespace bdproject
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form9 frm = new Form9();
+            frm.Show();
+            Close();
         }
 
         private void профильToolStripMenuItem_Click(object sender, EventArgs e)

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace bdproject
 {
-    public partial class Staff_onStaff : Form
+    public partial class Form10 : Form
     {
-        public Staff_onStaff()
+        public Form10()
         {
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
