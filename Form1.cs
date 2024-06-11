@@ -21,8 +21,8 @@ namespace bdproject
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            form2.Show();
+            AuthForm form3 = new AuthForm();
+            form3.Show();
             Hide();
 
         }
