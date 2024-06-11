@@ -59,9 +59,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.groupBox1.Location = new System.Drawing.Point(25, 60);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(783, 434);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -172,20 +172,23 @@
             // fAQToolStripMenuItem
             // 
             this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
-            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fAQToolStripMenuItem.Text = "F.A.Q";
+            this.fAQToolStripMenuItem.Click += new System.EventHandler(this.fAQToolStripMenuItem_Click);
             // 
             // главнаяToolStripMenuItem
             // 
             this.главнаяToolStripMenuItem.Name = "главнаяToolStripMenuItem";
-            this.главнаяToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.главнаяToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.главнаяToolStripMenuItem.Text = "Авиабилеты ";
+            this.главнаяToolStripMenuItem.Click += new System.EventHandler(this.главнаяToolStripMenuItem_Click);
             // 
             // петеводительToolStripMenuItem
             // 
             this.петеводительToolStripMenuItem.Name = "петеводительToolStripMenuItem";
-            this.петеводительToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.петеводительToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.петеводительToolStripMenuItem.Text = "Петеводитель ";
+            this.петеводительToolStripMenuItem.Click += new System.EventHandler(this.петеводительToolStripMenuItem_Click);
             // 
             // сотрудникиToolStripMenuItem
             // 
@@ -198,8 +201,9 @@
             // кToolStripMenuItem
             // 
             this.кToolStripMenuItem.Name = "кToolStripMenuItem";
-            this.кToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.кToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.кToolStripMenuItem.Text = "Профиль ";
+            this.кToolStripMenuItem.Click += new System.EventHandler(this.кToolStripMenuItem_Click);
             // 
             // Staff_onStaff
             // 
@@ -210,7 +214,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Staff_onStaff";
             this.Text = "Авиапродажи";
             this.groupBox1.ResumeLayout(false);
