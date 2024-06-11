@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace bdproject
 {
-    public partial class Form8 : Form
+    public partial class SupportChatForm : Form
     {
-        public Form8()
+        public SupportChatForm()
         {
             InitializeComponent();
         }
 
-        private void Form8_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Спасибо за ваше обращение, в ближайшее время мы вам ответим!");
+            Close();
         }
     }
 }

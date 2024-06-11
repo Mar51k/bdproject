@@ -17,5 +17,11 @@ namespace bdproject
             InitializeComponent();
             this.BackColor = Color.FromArgb(51, 51, 51);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SupportChatForm supportChatForm = new SupportChatForm();
+            supportChatForm.ShowDialog();
+        }
     }
 }

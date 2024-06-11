@@ -24,7 +24,7 @@ namespace bdproject
 
         private void главнаяToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 frm = new Form2();
+            MainWindow frm = new MainWindow();
             frm.Show();
             Close();
         }

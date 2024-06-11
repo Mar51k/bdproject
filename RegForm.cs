@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace bdproject
 {
-    public partial class Form10 : Form
+    public partial class RegForm : Form
     {
         private SqlConnection conn = new BdConn().conn;
-        public Form10()
+        public RegForm()
         {
             InitializeComponent();
             textBox3.PasswordChar = '●';
@@ -44,7 +44,7 @@ namespace bdproject
             {
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Регистрация прошла успешно!");
-                Form2 MainForm = new Form2();
+                MainWindow MainForm = new MainWindow();
                 MainForm.Show();
                 Close();
             }

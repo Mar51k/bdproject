@@ -1,6 +1,6 @@
 ﻿namespace bdproject
 {
-    partial class Form10
+    partial class RegForm
     {
         /// <summary>
         /// Required designer variable.

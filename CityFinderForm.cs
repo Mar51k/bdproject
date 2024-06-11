@@ -26,7 +26,7 @@ namespace bdproject
 
         private void главнаяToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            MainWindow form2 = new MainWindow();
             form2.Show();
             Close();
         }
@@ -40,8 +40,24 @@ namespace bdproject
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Form8 form8 = new Form8();
+            MoscowForm form8 = new MoscowForm();
             form8.ShowDialog();
+        }
+
+        private void сотрудникиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Authentication.empl == true)
+            {
+                Staff_onStaff frm = new Staff_onStaff();
+                frm.Show();
+                Close();
+            }
+            else
+            {
+                Staff_onUser fr2 = new Staff_onUser();
+                fr2.Show();
+                Close();
+            }
         }
     }
 }

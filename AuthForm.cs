@@ -57,7 +57,7 @@ namespace bdproject
                 {
                     Authentication.empl = true;
                 }
-                Form2 frm = new Form2();
+                MainWindow frm = new MainWindow();
                 frm.Show();
                 Close();
             }
@@ -66,7 +66,7 @@ namespace bdproject
 
         private void label5_Click(object sender, EventArgs e)
         {
-            Form10 fr10 = new Form10();
+            RegForm fr10 = new RegForm();
             fr10.Show();
             Close();
         }

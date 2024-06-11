@@ -14,10 +14,10 @@ using Microsoft.SqlServer.Server;
 
 namespace bdproject
 {
-    public partial class Form2 : Form
+    public partial class MainWindow : Form
     {
         private SqlConnection conn = new BdConn().conn;
-        public Form2()
+        public MainWindow()
         {
             InitializeComponent();
             this.BackColor = Color.FromArgb(51, 51, 51);
