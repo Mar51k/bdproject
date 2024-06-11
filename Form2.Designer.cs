@@ -373,7 +373,7 @@
             // fAQToolStripMenuItem
             // 
             this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
-            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fAQToolStripMenuItem.Text = "F.A.Q";
             this.fAQToolStripMenuItem.Click += new System.EventHandler(this.fAQToolStripMenuItem_Click);
             // 
@@ -382,27 +382,28 @@
             this.главнаяToolStripMenuItem.Checked = true;
             this.главнаяToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.главнаяToolStripMenuItem.Name = "главнаяToolStripMenuItem";
-            this.главнаяToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.главнаяToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.главнаяToolStripMenuItem.Text = "Авиабилеты ";
             this.главнаяToolStripMenuItem.Click += new System.EventHandler(this.главнаяToolStripMenuItem_Click);
             // 
             // петеводительToolStripMenuItem
             // 
             this.петеводительToolStripMenuItem.Name = "петеводительToolStripMenuItem";
-            this.петеводительToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.петеводительToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.петеводительToolStripMenuItem.Text = "Петеводитель ";
             this.петеводительToolStripMenuItem.Click += new System.EventHandler(this.петеводительToolStripMenuItem_Click);
             // 
             // сотрудникиToolStripMenuItem
             // 
             this.сотрудникиToolStripMenuItem.Name = "сотрудникиToolStripMenuItem";
-            this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.сотрудникиToolStripMenuItem.Text = "Сотрудники";
+            this.сотрудникиToolStripMenuItem.Click += new System.EventHandler(this.сотрудникиToolStripMenuItem_Click);
             // 
             // кToolStripMenuItem
             // 
             this.кToolStripMenuItem.Name = "кToolStripMenuItem";
-            this.кToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.кToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.кToolStripMenuItem.Text = "Профиль ";
             this.кToolStripMenuItem.Click += new System.EventHandler(this.кToolStripMenuItem_Click);
             // 
@@ -440,7 +441,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Авиапродажи";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

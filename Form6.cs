@@ -21,5 +21,32 @@ namespace bdproject
         {
 
         }
+
+        private void главнаяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            frm.Show();
+            Close();
+        }
+
+        private void fAQToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SupportForm sup = new SupportForm();
+            sup.ShowDialog();
+        }
+
+        private void петеводительToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CityFinder city = new CityFinder();
+            city.Show();
+            Close();
+        }
+
+        private void кToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProfileForm profile = new ProfileForm();
+            profile.Show();
+            Close();
+        }
     }
 }

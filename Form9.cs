@@ -12,12 +12,15 @@ using System.Windows.Forms;
 
 namespace bdproject
 {
+    
     public partial class Authentication : Form
     {
+        public static bool empl { get; set; } = false;
         private SqlConnection conn = new BdConn().conn;
         public Authentication()
         {
             InitializeComponent();
+            textBox2.PasswordChar = '●';
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -25,7 +28,8 @@ namespace bdproject
             string login = textBox1.Text;
             string password = textBox2.Text;
 
-            SqlCommand auth = new SqlCommand($"select PhoneNumber, Password from Клиенты where (PhoneNumber = '{login}') and (Password = '{password}')", conn);
+            SqlCommand auth = new SqlCommand($"select PhoneNumber, Password, Employee from Клиенты where (PhoneNumber = '{login}') and (Password = '{password}') ", conn);
+            
             
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable dt = new DataTable();
@@ -33,14 +37,38 @@ namespace bdproject
             adapter.Fill(dt);
 
 
+
+            DataSet ss = new DataSet();
+            SqlDataAdapter adapter1 = new SqlDataAdapter();
+            adapter1.SelectCommand = auth;
+            adapter1.Fill(ss);
+            string sql = ss.Tables[0].Rows[0]["Employee"].ToString();
+            
+            
+
+            
+
+            //MessageBox.Show(sql);
+
             if (dt.Rows.Count == 1)
             {
                 MessageBox.Show("Авторизация прошла успешно!");
+                if(sql == "True")
+                {
+                    Authentication.empl = true;
+                }
                 Form2 frm = new Form2();
                 frm.Show();
                 Close();
             }
             else { MessageBox.Show("Неверный номер телефона или пароль!"); }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Form10 fr10 = new Form10();
+            fr10.Show();
+            Close();
         }
     }
 }

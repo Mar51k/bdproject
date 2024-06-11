@@ -48,15 +48,12 @@ namespace bdproject
             string start = departure_date.Text;
             string end = arrival_date.Text;
 
-            MessageBox.Show($"{end} ++ {start}");
+            //MessageBox.Show($"{end} ++ {start}");
 
-            //SqlCommand find = new SqlCommand($"select Route, DateStart, DateEnd from Рейсы where Route LIKE N'{start}-{end}' ", conn);
-            //SqlDataReader reader = find.ExecuteReader();
+            
             
             SqlDataAdapter adapter = new SqlDataAdapter($"select Route, DateStart, DateEnd from Рейсы where (Route LIKE N'%{From}-{Where}%') and (DateStart LIKE '{start}') and (DateEnd LIKE '{end}') ", conn);
             DataSet ds = new DataSet();
-
-            //DataTable dt = new DataTable();
             adapter.Fill(ds);
             dataGridView1.DataSource = ds.Tables[0];
 
@@ -92,6 +89,22 @@ namespace bdproject
             ProfileForm profile = new ProfileForm();
             profile.Show();
             Close();
+        }
+
+        private void сотрудникиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Authentication.empl == true)
+            {
+                Staff_onStaff frm = new Staff_onStaff();
+                frm.Show();
+                Close();
+            }
+            else
+            {
+                Staff_onUser fr2 = new Staff_onUser();
+                fr2.Show();
+                Close();
+            }
         }
     }
 }
