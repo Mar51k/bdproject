@@ -16,16 +16,17 @@ namespace bdproject
 {
     public partial class Form2 : Form
     {
-        private SqlConnection conn = null;
+        private SqlConnection conn = new BdConn().conn;
         public Form2()
         {
             InitializeComponent();
             this.BackColor = Color.FromArgb(51, 51, 51);
             dataGridView1.BackgroundColor = Color.FromArgb(51, 51, 51);
-            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["bdproject.Properties.Settings.airportDB"].ConnectionString);
-            conn.Open();
+            
+            
             departure_date.Format = DateTimePickerFormat.Custom;
             departure_date.CustomFormat = "yyyy-MM-dd";
+
             arrival_date.Format = DateTimePickerFormat.Custom;
             arrival_date.CustomFormat = "yyyy-MM-dd";
         }

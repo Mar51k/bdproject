@@ -25,7 +25,7 @@ namespace bdproject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form9 frm = new Form9();
+            Authentication frm = new Authentication();
             frm.Show();
             Close();
         }

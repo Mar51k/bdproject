@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,11 +11,17 @@ using System.Windows.Forms;
 
 namespace bdproject
 {
-    public partial class Form9 : Form
+    public partial class Authentication : Form
     {
-        public Form9()
+        
+        public Authentication()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
