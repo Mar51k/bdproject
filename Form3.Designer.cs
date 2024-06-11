@@ -238,8 +238,10 @@
             // 
             // кToolStripMenuItem
             // 
+            this.кToolStripMenuItem.Checked = true;
+            this.кToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.кToolStripMenuItem.Name = "кToolStripMenuItem";
-            this.кToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.кToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.кToolStripMenuItem.Text = "Профиль ";
             // 
             // AuthForm

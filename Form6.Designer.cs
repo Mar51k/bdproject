@@ -262,8 +262,10 @@
             // 
             // сотрудникиToolStripMenuItem
             // 
+            this.сотрудникиToolStripMenuItem.Checked = true;
+            this.сотрудникиToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.сотрудникиToolStripMenuItem.Name = "сотрудникиToolStripMenuItem";
-            this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.сотрудникиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.сотрудникиToolStripMenuItem.Text = "Сотрудники";
             // 
             // кToolStripMenuItem

@@ -380,6 +380,8 @@
             // 
             // главнаяToolStripMenuItem
             // 
+            this.главнаяToolStripMenuItem.Checked = true;
+            this.главнаяToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.главнаяToolStripMenuItem.Name = "главнаяToolStripMenuItem";
             this.главнаяToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.главнаяToolStripMenuItem.Text = "Авиабилеты ";
@@ -390,6 +392,7 @@
             this.петеводительToolStripMenuItem.Name = "петеводительToolStripMenuItem";
             this.петеводительToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.петеводительToolStripMenuItem.Text = "Петеводитель ";
+            this.петеводительToolStripMenuItem.Click += new System.EventHandler(this.петеводительToolStripMenuItem_Click);
             // 
             // сотрудникиToolStripMenuItem
             // 
@@ -402,6 +405,7 @@
             this.кToolStripMenuItem.Name = "кToolStripMenuItem";
             this.кToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.кToolStripMenuItem.Text = "Профиль ";
+            this.кToolStripMenuItem.Click += new System.EventHandler(this.кToolStripMenuItem_Click);
             // 
             // Form2
             // 

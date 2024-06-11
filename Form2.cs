@@ -69,5 +69,20 @@ namespace bdproject
         {
 
         }
+
+        private void петеводительToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CityFinder cit  = new CityFinder();
+            cit.Show();
+            Close();
+
+        }
+
+        private void кToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProfileForm profile = new ProfileForm();
+            profile.Show();
+            Close();
+        }
     }
 }

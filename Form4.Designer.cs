@@ -301,8 +301,10 @@
             // 
             // петеводительToolStripMenuItem
             // 
+            this.петеводительToolStripMenuItem.Checked = true;
+            this.петеводительToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.петеводительToolStripMenuItem.Name = "петеводительToolStripMenuItem";
-            this.петеводительToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.петеводительToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.петеводительToolStripMenuItem.Text = "Петеводитель ";
             // 
             // сотрудникиToolStripMenuItem
