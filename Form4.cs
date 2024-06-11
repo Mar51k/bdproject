@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace bdproject
 {
-    public partial class Form4 : Form
+    public partial class CityFinder : Form
     {
-        public Form4()
+        public CityFinder()
         {
             InitializeComponent();
             this.BackColor = Color.FromArgb(51, 51, 51);

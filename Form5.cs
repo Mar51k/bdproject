@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace bdproject
 {
-    public partial class Form5 : Form
+    public partial class ProfileForm : Form
     {
-        public Form5()
+        public ProfileForm()
         {
             InitializeComponent();
         }

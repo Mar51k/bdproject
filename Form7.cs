@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace bdproject
 {
-    public partial class Form7 : Form
+    public partial class Staff_onStaff : Form
     {
-        public Form7()
+        public Staff_onStaff()
         {
             InitializeComponent();
         }
