@@ -22,11 +22,9 @@ namespace bdproject
             InitializeComponent();
             this.BackColor = Color.FromArgb(51, 51, 51);
             dataGridView1.BackgroundColor = Color.FromArgb(51, 51, 51);
-            
-            
+
             departure_date.Format = DateTimePickerFormat.Custom;
             departure_date.CustomFormat = "yyyy-MM-dd";
-
             arrival_date.Format = DateTimePickerFormat.Custom;
             arrival_date.CustomFormat = "yyyy-MM-dd";
         }
@@ -52,13 +50,15 @@ namespace bdproject
 
             MessageBox.Show($"{end} ++ {start}");
 
-            SqlCommand find = new SqlCommand($"select Route, DateStart, DateEnd from Рейсы where Route LIKE N'{start}-{end}' ", conn);
+            //SqlCommand find = new SqlCommand($"select Route, DateStart, DateEnd from Рейсы where Route LIKE N'{start}-{end}' ", conn);
             //SqlDataReader reader = find.ExecuteReader();
             
-            SqlDataAdapter adapter = new SqlDataAdapter(find);
-            DataTable dt = new DataTable();
-            adapter.Fill(dt);
-            dataGridView1.DataSource = dt;
+            SqlDataAdapter adapter = new SqlDataAdapter($"select Route, DateStart, DateEnd from Рейсы where (Route LIKE N'%{From}-{Where}%') and (DateStart LIKE '{start}') and (DateEnd LIKE '{end}') ", conn);
+            DataSet ds = new DataSet();
+
+            //DataTable dt = new DataTable();
+            adapter.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
 
             
         }
