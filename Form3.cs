@@ -25,7 +25,9 @@ namespace bdproject
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form9 frm = new Form9();
+            frm.Show();
+            Close();
         }
 
         private void профильToolStripMenuItem_Click(object sender, EventArgs e)

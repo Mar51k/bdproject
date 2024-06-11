@@ -147,6 +147,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(121, 110);
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox4
             // 
@@ -188,6 +189,7 @@
             this.label3.Size = new System.Drawing.Size(71, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "Москва";
+            this.label3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label4
             // 
@@ -198,6 +200,7 @@
             this.label4.Size = new System.Drawing.Size(44, 13);
             this.label4.TabIndex = 9;
             this.label4.Text = "Россия";
+            this.label4.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label5
             // 
