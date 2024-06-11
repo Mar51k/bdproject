@@ -37,5 +37,11 @@ namespace bdproject
             profileForm.Show();
             Close();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Form8 form8 = new Form8();
+            form8.ShowDialog();
+        }
     }
 }
