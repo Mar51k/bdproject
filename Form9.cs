@@ -26,8 +26,14 @@ namespace bdproject
             string password = textBox2.Text;
 
             SqlCommand auth = new SqlCommand($"select PhoneNumber, Password from Клиенты where (PhoneNumber = '{login}') and (Password = '{password}')", conn);
-            SqlDataReader reader = auth.ExecuteReader();
-            if (reader != null)
+            
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            DataTable dt = new DataTable();
+            adapter.SelectCommand = auth;
+            adapter.Fill(dt);
+
+
+            if (dt.Rows.Count == 1)
             {
                 MessageBox.Show("Авторизация прошла успешно!");
                 Form2 frm = new Form2();
@@ -38,3 +44,5 @@ namespace bdproject
         }
     }
 }
+
+
