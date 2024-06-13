@@ -193,6 +193,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AuthForm";
             this.Text = "Авиапродажи";
+            this.Load += new System.EventHandler(this.AuthForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

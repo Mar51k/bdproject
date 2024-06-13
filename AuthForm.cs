@@ -35,14 +35,21 @@ namespace bdproject
             DataTable dt = new DataTable();
             adapter.SelectCommand = auth;
             adapter.Fill(dt);
+            string sql = "";
 
-
-
-            DataSet ss = new DataSet();
-            SqlDataAdapter adapter1 = new SqlDataAdapter();
-            adapter1.SelectCommand = auth;
-            adapter1.Fill(ss);
-            string sql = ss.Tables[0].Rows[0]["Employee"].ToString();
+            try
+            {
+                DataSet ss = new DataSet();
+                SqlDataAdapter adapter1 = new SqlDataAdapter();
+                adapter1.SelectCommand = auth;
+                adapter1.Fill(ss);
+                sql = ss.Tables[0].Rows[0]["Employee"].ToString();
+            }
+            catch(Exception ex)
+            {
+                
+            }
+            
             
             
 

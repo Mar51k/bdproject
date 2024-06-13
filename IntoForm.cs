@@ -34,5 +34,10 @@ namespace bdproject
         {
 
         }
+
+        private void AuthForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
